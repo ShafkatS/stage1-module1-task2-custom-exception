@@ -8,7 +8,7 @@ public class StudentManager {
   public Student find(long studentID) throws StudentException{
     
     if (studentID > 11 || studentID < 1) {
-            throw new StudentManagerException("There was no student with this id " + studentID);
+            throw new StudentManagerException("Could not find student with ID" + studentID);
         }
         return Student.getValueOf(studentID);
   }
