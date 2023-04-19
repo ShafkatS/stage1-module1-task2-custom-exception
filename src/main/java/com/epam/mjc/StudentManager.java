@@ -21,7 +21,7 @@ public class StudentManager {
             try {
                 Student student = manager.find(IDs[i]);
                 System.out.println("Student name " + student.getName());
-            } catch (StudentManagerException exception) {
+            } catch (StudentException exception) {
                 System.out.println(exception);
             }
         }
